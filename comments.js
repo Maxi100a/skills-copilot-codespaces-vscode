@@ -1,4 +1,4 @@
-// Load the express module and store it in the variable express (Where do you think this comes from?)
+// Create web server
 const http = require("http");
 const fs = require("fs");
 const port = 3000;
@@ -17,4 +17,6 @@ server.listen(port, function(error) {
   if (error) {
     console.log("Something went wrong", error);
   } else {
-    console.log("Server is listening
+    console.log("Server is listening    on port " + port);
+  }
+});
